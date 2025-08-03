@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الأثاث الخشبي - طاولات وأعمال خشبية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Enhanced Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo"> متجر السليماني للأثاث المنزليه 🪵</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#" class="cart-icon" id="cartIcon">🛒 <span class="cart-count" id="cartCount">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>أجمل الطاولات الخشبية</h1>
+                <p>صناعة يدوية عالية الجودة من أفضل أنواع الخشب الطبيعي</p>
+                <a href="#products" class="btn">تصفح المنتجات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">منتجاتنا</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/tablo.jpg" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">طاولة طعام كلاسيكية</h3>
+                        <p class="product-price">2500 DH</p>
+                        <p class="product-description">طاولة طعام من خشب البلوط الأصلي، تتسع لـ 6 أشخاص مع تصميم كلاسيكي أنيق</p>
+                        <button class="btn" onclick="addToCart('طاولة طعام كلاسيكية', 2500)">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/nona.jpg" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">طاولة قهوة عصرية</h3>
+                        <p class="product-price">1200 DH</p>
+                        <p class="product-description">طاولة قهوة أنيقة من خشب الجوز المصقول بتصميم عصري وحديث</p>
+                        <button class="btn" onclick="addToCart('طاولة قهوة عصرية', 1200)">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/table.png" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">مكتب خشبي فاخر</h3>
+                        <p class="product-price">3200 DH</p>
+                        <p class="product-description">مكتب خشبي للدراسة أو العمل مع أدراج تخزين واسعة وتصميم عملي</p>
+                        <button class="btn" onclick="addToCart('مكتب خشبي فاخر', 3200)">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/desk.png" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">رف كتب خشبي</h3>
+                        <p class="product-price">800 DH</p>
+                        <p class="product-description">رف كتب من خشب الصنوبر مع تصميم حديث وأرفف قابلة للتعديل</p>
+                        <button class="btn" onclick="addToCart('رف كتب خشبي', 800)">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/monk.png" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">كرسي خشبي مريح</h3>
+                        <p class="product-price">450 DH</p>
+                        <p class="product-description">كرسي مريح من خشب الزان مع وسائد ناعمة وتصميم إرجونومي</p>
+                        <button class="btn" onclick="addToCart('كرسي خشبي مريح', 450)">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div style="text-align: center; font-weight: bold;">
+                            <div>
+                                <img src="images/dora.png" alt="tablaa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">خزانة ملابس خشبية</h3>
+                        <p class="product-price">400 DH</p>
+                        <p class="product-description">خزانة ملابس كبيرة من خشب السنديان الطبيعي مع مرآة وأدراج متعددة</p>
+                        <button class="btn" onclick="addToCart('خزانة ملابس خشبية', 4500)">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔨</div>
+                    <h3>صناعة حسب الطلب</h3>
+                    <p>نصنع لك الأثاث الخشبي حسب مقاساتك ومتطلباتك الخاصة مع أفضل المواد</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">🚚</div>
+                    <h3>توصيل مجاني</h3>
+                    <p>خدمة توصيل مجانية لجميع أنحاء المملكة مع التركيب المهني</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">🛠️</div>
+                    <h3>صيانة وإصلاح</h3>
+                    <p>خدمات صيانة وإصلاح الأثاث الخشبي مع ضمان الجودة والحرفية</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎨</div>
+                    <h3>تصميم وديكور</h3>
+                    <p>استشارات التصميم الداخلي واختيار الأثاث المناسب لمنزلك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div style="text-align: center; font-weight: bold; font-size: 1.1rem;">
+                        <img src="images/dora.png" alt="about us" style="width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #8b4513; margin-bottom: 20px; font-size: 1.8rem;">خبرة أكثر من 20 عاماً</h3>
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.8;">
+                        نحن فريق من الحرفيين المتخصصين في صناعة الأثاث الخشبي الفاخر. نستخدم أفضل أنواع الخشب الطبيعي المستورد والمحلي لضمان جودة عالية ومتانة استثنائية لمنتجاتنا.
+                    </p>
+                    <p style="margin-bottom: 25px; font-size: 1.1rem; line-height: 1.8;">
+                        رؤيتنا هي تقديم أثاث خشبي يجمع بين الأصالة والحداثة، مع الحفاظ على التقاليد الحرفية العريقة واستخدام أحدث التقنيات في التصميم والتصنيع.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 30px;">
+                        <div style="padding: 15px; background: #f8f6f3; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">✓</div>
+                            <strong>ضمان الجودة لمدة 5 سنوات</strong>
+                        </div>
+                        <div style="padding: 15px; background: #f8f6f3; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🌿</div>
+                            <strong>استخدام خشب طبيعي 100%</strong>
+                        </div>
+                        <div style="padding: 15px; background: #f8f6f3; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🎨</div>
+                            <strong>تصميمات حصرية ومبتكرة</strong>
+                        </div>
+                        <div style="padding: 15px; background: #f8f6f3; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">⭐</div>
+                            <strong>خدمة عملاء متميزة</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">اتصل بنا</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل:</label>
+                        <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="966501234567+">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة:</label>
+                        <textarea id="message" name="message" required placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">إرسال الرسالة</button>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+
+    <!-- العنوان -->
+    <a href="https://maps.app.goo.gl/KqSLJd5X7id9PZEQ7" target="_blank" style="text-decoration: none;">
+      <div style="padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); color: white;">
+        <div style="font-size: 2.5rem; margin-bottom: 15px;"></div>
+        <h4 style="margin-bottom: 10px; color: #f4e4bc;">العنوان</h4>
+        <p>قصر الكبير حومة القشاشي</p>
+      </div>
+    </a>
+
+    <!-- الهاتف -->
+    <a href="tel:+966501234567" style="text-decoration: none;">
+      <div style="padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); color: white;">
+        <div style="font-size: 2.5rem; margin-bottom: 15px;"></div>
+        <h4 style="margin-bottom: 10px; color: #f4e4bc;">الهاتف</h4>
+        <p>+212629394896</p>
+      </div>
+    </a>
+
+    <!-- البريد الإلكتروني -->
+    <a href="mailto:info@woodfurniture.sa" style="text-decoration: none;">
+      <div style="padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); color: white;">
+        <div style="font-size: 2.5rem; margin-bottom: 15px;"></div>
+        <h4 style="margin-bottom: 10px; color: #f4e4bc;">البريد الإلكتروني</h4>
+        <p>slimaniomar@gmail.com</p>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; text-align: right;">
+                <div>
+                    <h4 style="color: #f4e4bc; margin-bottom: 15px;">روابط سريعة</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;"><a href="#home" style="color: #ccc; text-decoration: none;">الرئيسية</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#products" style="color: #ccc; text-decoration: none;">المنتجات</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#services" style="color: #ccc; text-decoration: none;">الخدمات</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#about" style="color: #ccc; text-decoration: none;">من نحن</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #f4e4bc; margin-bottom: 15px;">خدماتنا</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px; color: #ccc;">صناعة حسب الطلب</li>
+                        <li style="margin-bottom: 8px; color: #ccc;">توصيل مجاني</li>
+                        <li style="margin-bottom: 8px; color: #ccc;">صيانة وإصلاح</li>
+                        <li style="margin-bottom: 8px; color: #ccc;">تصميم وديكور</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #f4e4bc; margin-bottom: 15px;">تواصل معنا</h4>
+                    <div style="display: flex; gap: 15px; justify-content: center;">
+                        <a href="#" style="color: #f4e4bc; font-size: 1.5rem; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">📱</a>
+                        <a href="#" style="color: #f4e4bc; font-size: 1.5rem; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">📧</a>
+                        <a href="#" style="color: #f4e4bc; font-size: 1.5rem; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">🌐</a>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #444; padding-top: 20px; text-align: center;">
+                <p>&copy; 2025 متجر الأثاث الخشبي. جميع الحقوق محفوظة.</p>
+                <p style="margin-top: 10px; color: #f4e4bc;"><i>By Slimani Omar</i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
